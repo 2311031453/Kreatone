@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreatone</title>
+    <meta name="description" content="Generator efek duotone untuk foto Anda">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="assets/convert.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kreatone</h1>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <img src="assets/light.svg" alt="Light mode" class="light-icon">
+                <img src="assets/dark.svg" alt="Dark mode" class="dark-icon">
+            </button>
+        </header>
+
+        <main>
+            <div class="upload-section" id="upload-section">
+                <div class="upload-area" id="upload-area">
+                    <img src="assets/upload.svg" alt="Upload" class="upload-icon">
+                    <p>Seret dan lepas gambar di sini atau</p>
+                    <label for="file-input" class="upload-btn">Pilih File</label>
+                    <input type="file" id="file-input" accept="image/*" hidden>
+                </div>
+            </div>
+
+            <div class="editor-section hidden" id="editor-section">
+                <div class="preview-container">
+                    <div class="preview-wrapper">
+                        <h3>Before</h3>
+                        <div class="image-container">
+                            <img id="original-image" alt="Original">
+                        </div>
+                    </div>
+                    <div class="preview-wrapper">
+                        <h3>After</h3>
+                        <div class="image-container">
+                            <canvas id="preview-canvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div class="color-pickers">
+                        <div class="color-input">
+                            <label for="color1">Warna 1</label>
+                            <input type="color" id="color1" value="#0044ff">
+                        </div>
+                        <div class="color-input">
+                            <label for="color2">Warna 2</label>
+                            <input type="color" id="color2" value="#ff00dd">
+                        </div>
+                    </div>
+
+                    <div class="effect-controls">
+                        <div class="control-group">
+                            <label for="grain-slider">Efek Grain</label>
+                            <div class="slider-container">
+                                <input type="range" id="grain-slider" min="0" max="100" value="0">
+                                <span id="grain-value">0%</span>
+                            </div>
+                        </div>
+
+                        <div class="button-group">
+                            <button id="invert-btn" class="icon-btn">
+                                <img src="assets/invert.svg" alt="Invert">
+                                <span>Invert</span>
+                            </button>
+                            <button id="convert-btn" class="icon-btn">
+                                <img src="assets/convert.svg" alt="Convert">
+                                <span>Apply</span>
+                            </button>
+                            <button id="download-btn" class="icon-btn">
+                                <img src="assets/download.svg" alt="Download">
+                                <span>Download</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© Axioma Astromos</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+    "name": "Duotone Generator",
+    "short_name": "Duotone",
+    "description": "Generator efek duotone untuk foto Anda",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f8f9fa",
+    "theme_color": "#4361ee",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "assets/convert.svg",
+        "sizes": "48x48 72x72 96x96 128x128 192x192 256x256 512x512",
+        "type": "image/svg+xml",
+        "purpose": "any maskable"
+      }
+    ]
+  }
