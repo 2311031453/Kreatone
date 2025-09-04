@@ -1,7 +1,7 @@
 {
-    "name": "Duotone Generator",
-    "short_name": "Duotone",
-    "description": "Generator efek duotone untuk foto Anda",
+    "name": "Kreatone",
+    "short_name": "Kreatone",
+    "description": "Generator efek tone untuk foto Anda",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#f8f9fa",
