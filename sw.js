@@ -1,4 +1,4 @@
-const CACHE_NAME = 'duotone-generator-v1';
+const CACHE_NAME = 'kreatone-v1';
 const urlsToCache = [
   '/',
   '/index.html',
